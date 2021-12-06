@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.25fr;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.container__header {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-rows: 0.25fr 0.75fr;
+}
+
+.container__main {
+  position: relative;
+  z-index: 9999;
+  grid-column: 2;
+  grid-row: 2;
+  background-color: var(--color-accent-background);
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px 0px var(--color-grey-dark-1);
+  height: min-content;
+}
+
+.container__footer {
+  grid-row: 3;
+  grid-column: 1 / span 3;
+}

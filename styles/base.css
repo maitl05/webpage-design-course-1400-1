@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Baloo Bhaijaan 2";
+  src: URL("../public/fonts/Baloo/BalooBhaijaan2-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: rgb(131, 114, 152);
+  --color-primary-dark: rgb(62, 46, 101);
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: rgb(22, 22, 22);
+  --color-grey-dark-2: rgb(58, 58, 58);
+  --color-grey-dark-3: #999;
+
+  --color-accent-background: rgb(241, 218, 229);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: solid black; */
+}
+
+body {
+  font-family: "Baloo Bhaijaan 2", "Open Sans", sans-serif;
+  font-weight: 400;
+  direction: rtl;
+  color: var(--color-grey-dark-2);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
